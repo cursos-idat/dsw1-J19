@@ -1,0 +1,35 @@
+# Listar todos los usuarios
+GET http://localhost:8081/mascotas/all
+
+###
+
+POST http://localhost:8081/mascotas/add
+Content-Type: application/x-www-form-urlencoded
+
+nombre=Lucas
+&raza=poodle
+&propietario=Juan
+
+###
+
+PUT http://localhost:8081/mascotas/edit
+Content-Type: application/x-www-form-urlencoded
+
+id=102
+&nombre=Lucas
+&raza=poodle
+&propietario=Luis
+###
+
+GET http://localhost:8081/mascotas/ver/1
+
+###
+
+DELETE http://localhost:8081/mascotas/del
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+
+###
+
+GET http://localhost:8081/mascotas/get/report
