@@ -64,6 +64,7 @@
 ## Semana 5
 - Guia Rest: https://spring.io/guides/gs/rest-service/
 - Docker, Dockerfile, docker-compose
+  - Docker Registry (catálogo oficial de imágenes): https://hub.docker.com/
 - render.com
   - simple rest
   - pg db
