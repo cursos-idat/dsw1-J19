@@ -80,5 +80,62 @@
     - mvnw clean package
     - Crear servicio web en render, vinculando su repositorio
     - Hacer pruebas: ...onrender.com/saludo?name=Idat
+
    
-    
+## Semana 6
+
+- GitHub CodeSpaces
+  - Entorno de desarrollo cloud, nos evita configurar un entorno de desarrollo local, con posibles conflictos entre diferentes versiones de Java
+  - 60 horas gratis al mes
+  - Detalles: https://github.com/features/codespaces
+  - Reporte de uso de Github CodeSpaces: https://github.com/settings/billing
+  - Alternativa a Github Codespaces: https://gitpod.io/
+  - Práctica CodeSpaces:
+    - Crear un nuevo repo en Github (con un archivo README) https://github.com/new
+    - Abrir el repositorio con CodeSpaces
+      - Desde el repositorio
+        - Clic al botón verde "Code"
+        - Clic a la pestaña CodeSpaces
+        - Clic al botón verde "Open in CodeSpace"
+      - Otra manera de abrir nuestro repo en CodeSpaces: https://github.com/codespaces/new
+    -  Crear un nuevo proyecto Java con la dependencia Spring Web: https://start.spring.io/
+    -  Pasar los archivos generados hacia CodeSpaces
+    -  Crear un nuevo Controller.java según ejemplo: https://github.com/texai/hola-codespaces-L11/blob/main/src/main/java/com/example/holacodespacesL11/Controller.java
+    -  Instalar las extensiones: "Extension Pack for Java" y "Rest Client"
+    -  Abrir el archivo Application.java
+    -  Click en Run and Debug
+    -  Hacer público el puerto (pestaña al costao de Terminal)
+  - Práctica CodeSpaces + Render
+    - Escribir un Dockerfile: https://github.com/texai/render-rest-saludo/blob/main/Dockerfile
+    - Abrir el archivo .gitignore y borrar la linea que pone `target/`
+    - Abrir el terminal y ejecutar el comando: `chmod +x mvnw`
+    - Luego el comando: `./mvnw clean package`
+    - [Source Control] Realizar el commit (Botón: Commit) y luego push (Botón: Sync Changes)
+    - Crear una app web render
+    - Vincular al repositorio
+    - Probar ...onrender.com
+  - Práctica CodeSpaces + Render + PostgreSQL
+    - Referencia: https://github.com/texai/idat-dsw1-accessing-data-mysql [*]
+    - Agregar dependencias al archivo pom.xml (JPA, postgresql) [*]
+    - Añadir un nuevo controlador ApiController.java [*]
+    - Añadir clases: User.java y UserRepository.java [*]
+    - En Render.com crear la BD PostgreSQL
+    - Configurar archivo application.properties con los datos de conexion de la BD PostgreSQL
+    - Luego ejecutar el comando: `./mvnw clean package`
+    - Realizar commit y push (Sync)
+    - Instalar en el VS code de CodeSpaces la extensión: Rest Client
+    - Escribir archivo reqs.http
+      - GET ...onrender.com/                    -> codigo y nombre
+      - GET ...onrender.com/api/usuario/all     -> []
+      - POST ...onrender.com/api/usuario/add {} -> "Saved!"
+      - GET ...onrender.com/api/usuario/all     -> [{id:1...}]
+    - Probar ...onrender.com/
+  
+## Semana 7
+
+  - EC2
+
+## Semana 8
+
+  - .
+
