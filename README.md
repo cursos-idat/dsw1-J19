@@ -137,7 +137,7 @@
 
 ## Semana 8
 
-  - Aplicación base RESTful
+  - (Primera Parte) Aplicación base RESTful
     - Creamos un nuevo repositorio en https://github.com/new
     - Lo abrimos usando GitHub CodeSpaces
     - Creamos un nuevo proyecto Java: https://start.spring.io/
@@ -155,6 +155,29 @@
     - Usando este repo como referencia: https://github.com/texai/idat-dsw1-accessing-data-mysql
       - Escribir archivo application.properties y los datos de conexión de nuestra BD PostgreSQL en render
       - Escrbir un controlador
-  - Operaciones para una entidad
+    - Ejecutamos nuestro proyecto de Java desde Code Spaces
+  - (Segunda Parte) Operaciones REST para una entidad usando Rest Repositories
+    - Borrar el controlador
+    - Usando este repo como referencia: https://github.com/texai/idat-dsw1-accessing-data-mysql
+      - Implementar la clase Entidad (Curso)
+    - Definir la interface CursoRepository
+    ```java
+    package com.example.demo;
+    
+    import java.util.List;
+    
+    import org.springframework.data.repository.CrudRepository;
+    import org.springframework.data.repository.PagingAndSortingRepository;
+    import org.springframework.data.repository.query.Param;
+    import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+    
+    @RepositoryRestResource(collectionResourceRel = "cursos", path = "cursos")
+    public interface CursoRepository extends PagingAndSortingRepository<Curso, Integer>, CrudRepository<Curso, Integer> {
+        
+        List<Curso> findByNombre(@Param("nombre") String nombre);
+    
+    }
+
+    ```
   - Operaciones para 2 entidades vinculadas
 
