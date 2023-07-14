@@ -180,4 +180,9 @@
 
     ```
   - Operaciones para 2 entidades vinculadas
+    - Escribir una segunda entidad: Carrera
+      - La cardinalidad de la relación sería:
+        - Un Curso tiene una Carrera
+        - Una Carrera tiene muchos Cursos
+    - Escribir la clase CarreraRepository.
 
