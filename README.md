@@ -137,5 +137,19 @@
 
 ## Semana 8
 
-  - .
+  - Aplicación base RESTful
+    - Creamos un nuevo repositorio en https://github.com/new
+    - Lo abrimos usando GitHub CodeSpaces
+    - Creamos un nuevo proyecto Java: https://start.spring.io/
+      - Project : Maven
+      - Dependencies:
+        - Spring Web
+        - Spring Data JPA
+        - PostgreSQL Driver
+        - REST Repositories
+    - Usando este repo como referencia: https://github.com/texai/idat-dsw1-accessing-data-mysql
+      - Escribir archivo application.properties y los datos de conexión de nuestra BD PostgreSQL en render
+      - 
+  - Operaciones para una entidad
+  - Operaciones para 2 entidades vinculadas
 
