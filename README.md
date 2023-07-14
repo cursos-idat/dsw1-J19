@@ -147,9 +147,14 @@
         - Spring Data JPA
         - PostgreSQL Driver
         - REST Repositories
+    - Instalar extensiones:
+      - Extesion Pack for Java
+      - Rest Client
+      - Database Client
+    - En "Explorer" > panel "Java Projects" > clic en "Import Projects"
     - Usando este repo como referencia: https://github.com/texai/idat-dsw1-accessing-data-mysql
       - Escribir archivo application.properties y los datos de conexión de nuestra BD PostgreSQL en render
-      - 
+      - Escrbir un controlador
   - Operaciones para una entidad
   - Operaciones para 2 entidades vinculadas
 
