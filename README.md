@@ -183,6 +183,32 @@
     - Escribir una segunda entidad: Carrera
       - La cardinalidad de la relación sería:
         - Un Curso tiene una Carrera
+          ```java
+          @ManyToOne(cascade = CascadeType.ALL)
+          @JoinColumn(name = "id_carrera")
+          private Carrera carrera;
+          
+          public Carrera getCarrera() {
+              return carrera;
+          }
+          public void setCarrera(Carrera carrera) {
+              this.carrera = carrera;
+          }
+          ```
+
         - Una Carrera tiene muchos Cursos
+          ```java
+            @OneToMany(targetEntity = Curso.class, mappedBy = "carrera")
+            @OrderBy("nombre ASC")
+            private Set<Curso> cursos = new HashSet<Curso>();
+        
+            public Set<Curso> getCursos() {
+                return cursos;
+            }
+            public void setCursos(Set<Curso> cursos) {
+                this.cursos = cursos;
+            }
+
+          ```
     - Escribir la clase CarreraRepository.
 
