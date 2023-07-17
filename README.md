@@ -211,6 +211,7 @@
       - La cardinalidad de la relación sería:
         - Un Curso tiene una Carrera
           ```java
+          // Curso.java
           @ManyToOne(cascade = CascadeType.ALL)
           @JoinColumn(name = "id_carrera")
           private Carrera carrera;
@@ -225,6 +226,7 @@
 
         - Una Carrera tiene muchos Cursos
           ```java
+            // Carrera.java
             @OneToMany(targetEntity = Curso.class, mappedBy = "carrera")
             @OrderBy("nombre ASC")
             private Set<Curso> cursos = new HashSet<Curso>();
