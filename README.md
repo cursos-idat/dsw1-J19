@@ -246,7 +246,7 @@
 
   - [Java] Spring + React:  [Guía](https://spring.io/guides/tutorials/react-and-spring-data-rest/)
   - Comandos fuera de la guía (después de "Example 11. src/main/js/app.js") :
-    - npm i
-    - export NODE_OPTIONS=--openssl-legacy-provider
-    - ./node_modules/webpack-cli/bin/cli.js
+    - Instalamos las dependencias de node declaradas en el archivo package.json: `npm i`
+    - Para ejecutar webpack desde versiones de node superiores a la 16: `export NODE_OPTIONS=--openssl-legacy-provider`
+    - Ejecutamos webpack para que empaquete nuestra aplicación de frontend según la configuración declarada en el archivo webpack.config.js `./node_modules/webpack-cli/bin/cli.js`
 
