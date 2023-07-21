@@ -245,4 +245,8 @@
 ## Semana 9
 
   - [Java] Spring + React:  [Guía](https://spring.io/guides/tutorials/react-and-spring-data-rest/)
+  - Comandos fuera de la guía:
+    - npm i
+    - export NODE_OPTIONS=--openssl-legacy-provider
+    - ./node_modules/webpack-cli/bin/cli.js
 
