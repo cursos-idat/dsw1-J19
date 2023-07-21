@@ -244,5 +244,5 @@
 
 ## Semana 9
 
-  - [Java] Spring + React:  (Guía)[https://spring.io/guides/tutorials/react-and-spring-data-rest/]
+  - [Java] Spring + React:  [Guía](https://spring.io/guides/tutorials/react-and-spring-data-rest/)
 
