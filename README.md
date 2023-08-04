@@ -250,3 +250,28 @@
     - Para ejecutar webpack desde versiones de node superiores a la 16: `export NODE_OPTIONS=--openssl-legacy-provider`
     - Ejecutamos webpack para que empaquete nuestra aplicación de frontend según la configuración declarada en el archivo webpack.config.js `./node_modules/webpack-cli/bin/cli.js`
 
+## Semana 10
+
+- Evaluación Contínua 3
+
+## Semana 11
+
+- Repaso: Front-End
+- Mostrar como renderizar 2 tablas de entidades diferentes en la misma vista
+- Practica: Implementar su PROPIA Entidad con al menos 3 atributos (campos)
+  - clase  @Entity
+  - interface Repository
+  - Database Loader
+  - app.js
+  - reqs.http
+
+## Semana 14
+
+- Evaluación Final
+  - BackEnd
+    - Construir los servicios web para 2 entidades (CrudRepository, PagingAndSortingRepository)
+    - Controlador adicional desde el cual se llame a funciones que modifican datos en más de una entidad.
+  - FrontEnd
+    - Vista de tabla de datos, con datos pre-cargados, usando ReactJS
+      - Vista con 2 tablas de datos a la vez.
+    - Formulario para crear y editar
