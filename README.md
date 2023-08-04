@@ -257,6 +257,7 @@
 ## Semana 11
 
 - Repaso: Front-End
+- Repo base: https://github.com/texai/semana9-app-cliente-react-J19
 - Mostrar como renderizar 2 tablas de entidades diferentes en la misma vista
 - Practica: Implementar su PROPIA Entidad con al menos 3 atributos (campos)
   - clase  @Entity
