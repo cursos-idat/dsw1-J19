@@ -265,6 +265,15 @@
   - app.js
   - reqs.http
 
+## Semana 12
+
+- [React] Formulario para crear y editar
+
+## Semana 13
+
+- Operaciones que escapan al alcance de CrudRepository
+- Controlador adicional desde el cual se llame a funciones que modifican datos en más de una entidad.
+
 ## Semana 14
 
 - Evaluación Final
