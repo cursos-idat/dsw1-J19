@@ -269,6 +269,20 @@
 ## Semana 12
 
 - [React] Formulario para crear y editar
+- Componentes React
+  - Clases
+  - Funciones
+- React Router DOM
+  - `npm i react-router-dom`
+- `<Link to="/" >Volver</Link>`
+- Formulario
+  - `onSubmit`
+  - `onChange`
+  - `useState`
+  - Form POST
+  - redirect to Home
+- Práctica:
+  - Crear un formulario que agregue datos de la entidad Instrumento: nombre, categoría y descripcion
 
 ## Semana 13
 
