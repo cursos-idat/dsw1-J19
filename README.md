@@ -283,6 +283,7 @@
   - redirect to Home
 - Práctica:
   - Crear un formulario que agregue datos de la entidad Instrumento: nombre, categoría y descripcion
+  - Crear enlace "ver" para cada Músico.
 
 ## Semana 13
 
