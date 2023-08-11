@@ -283,7 +283,13 @@
   - redirect to Home
 - Práctica:
   - Crear un formulario que agregue datos de la entidad Instrumento: nombre, categoría y descripcion
-  - Crear enlace "ver" para cada Músico.
+    - Crear el `<Link to="/nuevo-instrumento">Nuevo Instrumento</Link>` en `pages/home.js`
+    - Crear `pages/nuevo-instrumento.js` tomar como referencia `pages/nuevo-musico.js`
+    - Agregar esta página al `router` en `app.js`
+  - Crear enlace "ver" para cada Músico
+    - Modificar `<MusicoList>` para agregar otra cabecera de columna.
+    - Modificar `<Musico>` para agregar el `<Link>` para enviar a ver-musico/id
+    - Crear `pages/ver-musico.js` tomar como referencua `pages/ver-instrumento.js`
 
 ## Semana 13
 
